@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Demo</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: repeat(4, 75px);
+            justify-content: center;
+            align-content: center;
+            height: 90vh;
+        }
+
+        .grid_item {
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
+
+       }
+
+        #itm5 {
+            justify-self: center;
+            align-self: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="grid_item" id="itm1">1</div>
+    <div class="grid_item" id="itm2">2</div>
+    <div class="grid_item" id="itm3">3</div>
+    <div class="grid_item" id="itm4">4</div>
+    <div class="grid_item" id="itm5">5</div>
+    <div class="grid_item" id="itm6">6</div>
+    <div class="grid_item" id="itm7">7</div>
+    <div class="grid_item" id="itm8">8</div>
+    <div class="grid_item" id="itm9">9</div>
+    <div class="grid_item" id="itm10">10</div>
+    <div class="grid_item" id="itm11">11</div>
+    <div class="grid_item" id="itm12">12</div>
+</div>
+
+</body>
+</html>
