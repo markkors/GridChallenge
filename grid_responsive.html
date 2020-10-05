@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Demo</title>
+
+    <style>
+        .container {
+
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 50px minmax(300px,1fr) minmax(50px,1fr);
+            justify-content: space-around;
+
+        }
+
+        .grid_item {
+            border: 1px solid;
+            height: 40px;
+       }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="grid_item" id="itm1">1</div>
+    <div class="grid_item" id="itm2">2</div>
+    <div class="grid_item" id="itm3">3</div>
+
+</div>
+
+</body>
+</html>
